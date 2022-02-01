@@ -6,9 +6,9 @@ var port = process.env.port || 3000;
 var app = express();
 
 app.get('/', (request, response) => {
-    res.sendFile('index.html',{root:__dirname});
+    response.sendFile('index.html',{root:__dirname});
 })
 
 app.listen(port, (request, response) => {
-    ;
+    console.log("Server Started");
 })
